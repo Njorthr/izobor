@@ -1,0 +1,391 @@
+:root {
+    --primary: #22222B;
+    --secondary: #8fff00;
+    --tertiary: #FF922F;
+    /* --quarternary: #2B2B31; */
+    --quarternary: #0adab0;
+    --white: rgb(252, 227, 227);
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+.wrapper {
+    overflow-x: hidden;
+}
+.container {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    height: auto;
+}
+.acik {
+    background-color: #fff404;
+}
+.acik a {
+    color: var(--primary);   
+}
+.acik a:hover {
+    background-color: #15f800;
+}
+.ilk {
+    background-color: lightblue;
+}
+.ilk a {
+    color: rgb(99, 106, 109);
+}
+.ilk a:hover {
+    background-color: rgb(180, 190, 194);
+}
+/* Header */
+header {
+    padding: 25px 0 15px 0;
+    background-color: var(--primary);
+    
+}
+header .container {
+    justify-content: space-between;
+}
+.brand_logo {
+    background-color: var(--secondary);
+    width: 200px;
+    height: 80px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.links ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.links ul li {
+    margin: 0 10px;
+}
+.links ul li:not(.acik, .ilk) a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.3rem;
+    color: rgb(252, 227, 227);
+    
+}
+.links > ul li:not(:last-child, .acik, .ilk) > a:hover {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    padding-top: 8px;
+}
+/* DROPDOWN */
+li a, .navbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li.dropnav {
+    display: inline-block;
+}
+.nav-content {
+    display: none;
+    position: absolute;
+    background-color: var(--primary);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  
+}
+.nav-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+   
+}
+.nav-content a:not(:last-child) {
+    border-right: 2px solid gray;
+}
+.nav-content a:hover {
+    background-color: rgb(70, 63, 63) ;
+    border-top: none;   
+}
+.dropnav:hover .nav-content {
+    display: flex;
+}
+/* DROPDOWN END */
+
+
+/* Showcase */
+.slider {
+    width: 400%;
+    height: 75vh;
+    display: flex;
+}
+input[type="radio"] {
+    display: none;
+}
+.slide {
+    width: 100%;
+}
+.slide div {
+    background-color: hsla(0, 0%, 100%, 0.7);
+    padding: 25px;
+    position: relative;
+    left: 10%;
+}
+.slide div h1 {
+    margin: 10px 0 20px 0;
+    font-size: 3rem;
+    color: gray;
+}
+.slide div a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.2rem;
+    padding: 5px 0;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+.slide_1 {
+    background-image: url(images//city_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.slide_2 {
+    background-image: url(images//power_plant_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.slide_3 {
+    background-image: url(images//3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.slide_4 {
+    background-image: url(images//petroleum_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.labels {
+    position: relative;
+    bottom: 40px;
+    width: 80%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.label {
+    width: 20%;
+    height: 180px;
+    cursor: pointer;
+    
+}
+#label_1 {
+    background-image: url(images/city_2.jpg);
+    background-size: cover;
+    color: gray;
+}
+#label_2 {
+    background-image: url(images/power_plant_2.jpg);
+    background-size: cover;
+    color: gray;
+}
+#label_3 {
+    background-image: url(images/3.jpg);
+    background-size: cover;
+    color: gray;
+}
+#label_4 {
+    background-image: url(images/petroleum_2.jpg);
+    background-size: cover;
+    color: gray;
+}
+.label_top {
+    background-image:linear-gradient(to bottom, hsla(0, 0%, 100%, 1),hsla(0, 0%, 100%, 0.95) ,hsla(0, 0%, 100%, 0) ) ;
+    height: inherit;
+    padding: 20px;
+    border-top: 4px solid red;
+    transition: transform 0.4s;
+    /* box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1); */
+}
+.label_top a {
+    display: none;
+    text-decoration: none;
+    color: gray;
+    padding: 5px 0;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+.label_top h4 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+.label:hover .label_top {
+    transform: translateY(-30px);
+    color: black;
+}
+.label:hover .label_top a {
+    display: inline;
+}
+#btn1:checked ~ .slider {
+    margin-left: 0;
+    transition: 1s;
+}
+#btn2:checked ~ .slider {
+    margin-left: -100%;
+    transition: 1s;
+}
+#btn3:checked ~ .slider {
+    margin-left: -200%;
+    transition: 1s;
+}
+#btn4:checked ~ .slider {
+    margin-left: -300%;
+    transition: 1s;
+}
+/* SECTION */
+section {
+    background-color: var(--primary);
+    padding-bottom: 50px;
+}
+.col_left {
+    flex-basis: 50%;
+}
+.col_right {
+    flex-basis: 50%;
+}
+.ref {
+    background-color: var(--white);
+}
+.ref h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+.references {
+    list-style-type: none;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.references li {
+    flex-basis: 10%;
+}
+.references img {
+    width: 100%;
+    height: auto;
+}
+#botas {
+    width: 70%;
+    height: auto;
+    position: relative;
+    left: 12.5%;
+}
+#tp {
+    width: 75%;
+    height: auto;
+    position: relative;
+    left: 12.5%;
+}
+#row_3 {
+    padding-top: 100px;
+}
+#row_3 .container {
+    background-color: var(--secondary);
+    padding: 50px;
+    border-radius: 35px;
+}
+#row_3 .col_left {
+    margin: auto;
+}
+#row_3 .col_left img {
+    max-width: 700px;
+    height: auto;
+}
+#row_3 .col_right {
+    box-sizing: border-box;
+    padding: 20px 30px;
+    font-size: 1.15rem;
+    background-color: white;
+    border-radius: 30px;
+}
+#row_3 .col_right ul {
+    padding: 0 20px;
+}
+#row_3 .col_right h1 {
+    margin-top: 0;
+}
+/* FOOTER */
+footer {
+    background-color: var(--primary);
+    padding: 30px 0;
+    border-top: 2px solid var(--secondary);
+}
+footer .col_left {
+    margin: auto;
+    
+}
+footer .col_left img {
+    background-color: var(--secondary);
+    padding: 20px;
+    border-radius: 22px;
+}
+footer .col_right {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: var(--white);
+}
+footer .col_right ul {
+    list-style-type: none;
+}
+footer .col_right ul li h3 {
+    margin-top: 0;
+    text-align: center;
+}
+footer .col_right ul li a {
+    color: var(--white);
+    padding: 0;
+    text-decoration: underline;
+}
+/* HAMBURGER MENU */
+.menu_wrap {
+    display: none;
+}

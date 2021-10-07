@@ -1,0 +1,875 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+.wrapper {
+    overflow-x: hidden;
+}
+.container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    height: auto;
+}
+.koyu {
+    background-color: #22222B;
+    color: white;
+}
+.koyu a:hover {
+    background-color: #515158;
+}
+.acik {
+    background-color: #fff404;
+}
+.acik a:hover {
+    background-color: #15f800;
+}
+/* Header */
+header {
+    padding: 25px 0 15px 0;
+    /* background-image: linear-gradient(to bottom, rgb(194, 206, 219), rgb(239, 238, 245)); */
+    
+    /* background-color: #0093E9;
+    background-image: linear-gradient(180deg, #55bcf8 0%, #91ebe0 100%); */
+
+    background-color: #D3D3D3;
+
+}
+header .container {
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+.links ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.links ul li {
+    margin: 0 10px;
+}
+.links ul li:not(.koyu) a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.3rem;
+    color: #424242;
+}
+.links > ul li:not(:last-child, .koyu, .acik) > a:hover {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    padding-top: 8px;
+}
+/* DROPDOWN */
+li a, .navbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li.dropnav {
+    display: inline-block;
+}
+.nav-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  
+}
+.nav-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+   
+}
+.nav-content a:not(:last-child) {
+    border-right: 2px solid gray;
+}
+.nav-content a:hover {
+    background-color: #f1f1f1;
+    border-top: none;   
+}
+.dropnav:hover .nav-content {
+    display: flex;
+}
+/* DROPDOWN END */
+
+
+/* Showcase */
+.slider {
+    width: 400%;
+    height: 75vh;
+    display: flex;
+}
+input[type="radio"] {
+    display: none;
+}
+.slide {
+    width: 100%;
+}
+.slide div {
+    background-color: hsla(0, 0%, 100%, 0.7);
+    padding: 25px;
+    position: relative;
+    left: 10%;
+}
+.slide div h1 {
+    margin: 10px 0 20px 0;
+    font-size: 3rem;
+    color: gray;
+}
+.slide div a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.2rem;
+    padding: 5px 0;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+.slide_1 {
+    background-image: url(images//city_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.slide_2 {
+    background-image: url(images//power_plant_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.slide_3 {
+    background-image: url(images//greenhouse_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.slide_4 {
+    background-image: url(images//petroleum_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.labels {
+    position: relative;
+    bottom: 40px;
+    width: 80%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.label {
+    width: 20%;
+    height: 180px;
+    cursor: pointer;
+}
+#label_1 {
+    background-image: url(images/city_2.jpg);
+    background-size: cover;
+    color: gray;
+}
+#label_2 {
+    background-image: url(images/power_plant_2.jpg);
+    background-size: cover;
+    color: gray;
+}
+#label_3 {
+    background-image: url(images/greenhouse_3.jpg);
+    background-size: cover;
+    color: gray;
+}
+#label_4 {
+    background-image: url(images/petroleum_2.jpg);
+    background-size: cover;
+    color: gray;
+}
+.label_top {
+    background-image:linear-gradient(to bottom, hsla(0, 0%, 100%, 1),hsla(0, 0%, 100%, 0.95) ,hsla(0, 0%, 100%, 0) ) ;
+    height: inherit;
+    padding: 20px;
+    border-top: 4px solid red;
+    transition: transform 0.4s;
+}
+.label_top a {
+    display: none;
+    text-decoration: none;
+    color: gray;
+    padding: 5px 0;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+.label_top h4 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+.label:hover .label_top {
+    transform: translateY(-30px);
+    color: black;
+}
+.label:hover .label_top a {
+    display: inline;
+}
+#btn1:checked ~ .slider {
+    margin-left: 0;
+    transition: 1s;
+}
+#btn2:checked ~ .slider {
+    margin-left: -100%;
+    transition: 1s;
+}
+#btn3:checked ~ .slider {
+    margin-left: -200%;
+    transition: 1s;
+}
+#btn4:checked ~ .slider {
+    margin-left: -300%;
+    transition: 1s;
+}
+/* SECTION */
+section {
+    /* background-color: rgb(239, 238, 245); */
+    background-color: white;
+}
+.col_left {
+    flex-basis: 50%;
+}
+.col_right {
+    flex-basis: 50%;
+}
+.ref {
+    padding-bottom: 50px;
+}
+.ref h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.ref .container {
+    width: 80%;
+}
+.references {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.references li {
+    flex-basis: 10%;
+}
+.references img {
+    /* width: 100%; */
+    height: auto;
+}
+.ref_logo {
+    width: 120px;
+}
+/* ROW 3 */
+#row_3 {
+    padding: 10px 0 50px 0;
+    color: white;
+    /* font-size: 1.2rem; */
+}
+#row_3 .container {
+    width: 65%;
+}
+#row_3 .col_left, #row_3 .col_right {
+    /* background-color: #323E42; */
+    /* background-color: #340744; */
+    background-color: white;
+    color: #340744;
+}
+#row_3 .grid_text {
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 15px;
+}
+#row_3 h2 {
+    text-align: center;
+    font-weight: bolder;
+}
+.grid_image_1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/pipes.jpeg);
+    background-position: center top;
+    background-size: cover;
+}
+.grid_image_2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/pipes_2.jpg);
+    background-size: cover;
+}
+.katalog_urun_1 {
+    width: 100%;
+    text-align: center;
+}
+.reverse_col {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.ref, #row_3, .index_row_1, .map_section {
+    background-color: #d3d3d331;
+}
+/* #row_3 {
+    padding-bottom: 50px;
+}
+#row_3 .container {
+    background-color: lightblue;
+    padding: 50px;
+    border-radius: 35px;
+}
+#row_3 .col_left {
+    margin: auto;
+}
+#row_3 .col_left img {
+    max-width: 700px;
+    height: auto;
+}
+#row_3 .col_right {
+    box-sizing: border-box;
+    padding: 20px 30px;
+    font-size: 1.15rem;
+    background-color: white;
+    border-radius: 30px;
+}
+#row_3 .col_right ul {
+    padding: 0 20px;
+}
+#row_3 .col_right h1 {
+    margin-top: 0;
+} */
+/* MAP SECTION */
+.map_section {
+    padding: 50px 0;
+}
+.map_section iframe {
+    margin: auto;
+}
+/* FOOTER */
+footer {
+    /* background-color: rgba(55, 68, 182, 0.644); */
+    /* background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
+
+    background-color: #D3D3D3;
+
+    padding: 30px 0;
+}
+footer .col_left {
+    margin: auto;
+}
+footer .col_left a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #424242;
+    padding: 15px 0;
+}
+footer .col_left a:hover {
+    opacity: 0.8;
+}
+footer .col_left a img {
+    width: 36px;
+    height: auto;
+    transform: translateY(10px);
+}
+footer .col_right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: #424242;
+}
+footer .col_right h3 {
+    width: 100%;
+    text-align: center;
+}
+footer .col_right ul {
+    width: 50%;
+    list-style-type: none;
+    padding-left: 0;
+}
+.googleMaps {
+    width: 50%;
+    text-align: right;
+}
+footer .col_right ul li {
+    padding-top: 15px;
+}
+footer .col_right ul li svg {
+    width: 25px;
+    height: 25px;
+    transform: translateY(5px);
+    padding-right: 15px;
+}
+footer .col_right ul li h3 {
+    margin-top: 0;
+    text-align: center;
+}
+footer .col_right ul li a {
+    color: #424242;
+    padding: 0;
+    text-decoration: none;
+    text-align: left;
+    transition: color 0.4s;
+}
+footer .col_right ul li a:hover {
+    color: rgb(139, 121, 121);
+}
+/* HAMBURGER MENU */
+.menu_wrap {
+    display: none;
+}
+
+
+/* URUNLER PAGE */
+#urun_section .container {
+    width: 70%;
+    background-color: #d3d3d331;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+.urun {
+    width: 45%;
+    margin: 15px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.urun a {
+    text-decoration: none;
+    color: gray;
+    width: 100%;
+}
+.urun_ust {
+    width: 100%;
+    height: 467px;
+    /* background-image:linear-gradient(to bottom, hsla(0, 0%, 100%, 1),hsla(0, 0%, 100%, 0.95) ,hsla(0, 0%, 100%, 0) ) ; */
+}
+.urun h1 {
+    margin: auto;
+    background-color: white;
+    padding: 0 15px 10px 15px;
+    border-radius: 0 0 10px 10px;
+    width: fit-content;
+    text-align: center;
+    transition: padding 0.4s;
+}
+.urun a:hover  h1 {
+    padding: 20px 20px 10px 20px;
+}
+.urun_1 {
+    background-image: url(images/city_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.urun_2 {
+    background-image: url(images/power_plant_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.urun_3 {
+    background-image: url(images/greenhouse_3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.urun_4 {
+    background-image: url(images/petroleum_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.urun_5 {
+    background-image: url(images/3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.urun_6 {
+    background-image: url(images/gheotermal.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* URUN ALT SAYFA */
+.urun_alt_section .container {
+    width: 70%;
+    
+    background-color: #d3d3d315;
+    /* background-color: #f1f5f8 ; */
+}
+
+.urun_col_left {
+    width: 20%;
+    border-right: 15px solid #2D1674;
+}
+.urun_col_left ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ust_baslik {
+    border-bottom: 5px solid #2D1674;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.ust_baslik h3 {
+    margin: 15px 5px;
+    width: 90%;
+}
+.ust_baslik label {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    padding: 5px;
+    display: none;
+}
+#arrow_toggler {
+    display: none;
+}
+
+.urun_col_left ul li a {
+    width: 100%;
+    padding: 16px 0 16px 7px;
+    text-align: left;
+    color: black;
+}
+.urun_col_left ul li a:hover {
+    background-color: rgb(138, 208, 231);
+}
+.urun_col_right {
+    width: 75%;
+    margin: auto;
+}
+.urun_col_right h1 {
+    text-align: center;
+}
+.urun_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.urun_col_1 {
+    width: 30%;
+}
+.urun_col_2 {
+    width: 70%;
+    margin: auto;
+}
+.urun_col_3, .urun_col_4 {
+    box-sizing: border-box;
+    margin: 16px;
+    padding: 16px;
+    width: 45%;
+    border: 2px solid #2D1674;
+    border-radius: 35px 0 0 0;
+    border-left: 20px solid #2D1674;
+}
+.urun_col_5 {
+    box-sizing: border-box;
+    margin: 16px;
+    padding: 16px;
+    width: 95%;
+    border: 2px solid #2D1674;
+    border-radius: 35px 0 0 0;
+    border-left: 20px solid #2D1674;
+}
+.urun_col_1 img {
+    width: 200px;
+}
+/* GEMİ SANAYİ */
+.urun_col_1_gemi {
+    background-image: url(images/3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    border-radius: 100px 0 100px 0;
+    margin: auto;
+    justify-self: center;
+}
+.urun_col_2_gemi {
+    width: 50%;
+    margin: auto;
+}
+.urun_col_3_gemi {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px;
+    padding: 16px;
+    border: 2px solid #2D1674;
+    border-radius: 35px 0 0 0;
+    border-left: 20px solid #2D1674;
+}
+/* PETROL & GAZ */
+.urun_col_1_petrol {
+    background-image: url(images/petroleum_2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    border-radius: 100px 0 100px 0;
+    margin: auto;
+}
+.urun_col_2_petrol {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+/* DÖKÜMANLAR */
+
+.dokumanlar_list a::before {
+    content: url(images/pdf_24px.png);
+}
+.dokuman_wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.dokuman {
+    width: 45%;
+    display: flex;
+    margin: 30px 0;
+}
+.dokuman > a img {
+    width: 125px;
+    height: 75px;
+    padding: 20px;
+    background-image: url(images/pdf_24px.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 3px solid rgb(189, 189, 189);
+    border-radius: 15px;
+}
+#dirsek {
+    width: 75px;
+    height: 75px;
+    padding: 20px 45px;
+}
+#bransman {
+    width: 100px;
+    height: 75px;
+    padding: 20px 32.5px;
+}
+.dokuman_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+.dokuman_text h4 {
+    margin: 0;
+}
+
+.dokuman_text a img {
+    width: 36px;
+    height: auto;
+}
+/* REFERANSLAR */
+.ref_wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 35px 0;
+}
+.ref_col {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    
+}
+.ref_col p {
+    margin: 0;
+    padding: 0 20px 20px 20px;
+}
+.ref_1 {
+    background-image: url(images/tupras.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_2 {
+    background-image: url(images/enerjisa.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_3 {
+    background-image: url(images/eti_bakir.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_4 {
+    background-image: url(images/tpao.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_5 {
+    background-image: url(images/ukrayna.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_6 {
+    background-image: url(images/roder.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_7 {
+    background-image: url(images/tutes.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_8 {
+    background-image: url(images/botas.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+/* GALERİ */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.gallery_item {
+    width: 20%;
+    margin: 20px;
+    
+}
+.gallery_item a img {
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    transition: 0.4s;
+}
+.gallery_item a:hover img {
+    transform: scale(1.1);
+}
+/* İLETİŞİM */
+.contact_wrapper {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact_wrapper h1 {
+    text-align: center;
+}
+.contact_wrapper input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 8px;
+    font-size: 1.25rem;
+    border: 1px solid gray;
+    color: rgb(56, 56, 56);
+}
+.contact_wrapper input:focus , textarea:focus {
+    outline: none;
+}
+.contact_wrapper textarea {
+    resize: none;
+    height: 250px;
+}
+.contact_wrapper form  {
+    font-size: 1.25rem;
+}
+.contact_wrapper input[type="submit"] {
+    background-color: rgba(30, 143, 255, 0.774);
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    transition: 0.4s;
+}
+.contact_wrapper input[type="submit"]:hover {
+    background-color: dodgerblue;
+
+}
