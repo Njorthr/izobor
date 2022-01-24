@@ -15,6 +15,10 @@ body {
     margin: auto;
     height: auto;
 }
+.container h1 {
+    width: 100%;
+    text-align: center;
+}
 .koyu {
     background-color: #22222B;
     color: white;
@@ -872,4 +876,21 @@ footer .col_right ul li a:hover {
 .contact_wrapper input[type="submit"]:hover {
     background-color: dodgerblue;
 
+}
+
+/* Services */
+.services_text {
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.services_text h3 {
+    text-align: center;
+}
+.services h1 {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(189, 189, 189);
 }
