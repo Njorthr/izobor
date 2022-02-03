@@ -1,6 +1,7 @@
 # Izobor  
 
-New website for Izobor Pre-Insulated Pipe Manufacturing Co.
+New website for Izobor Pre-Insulated Pipe Manufacturing Co.  
+Built with HTML/CSS/JavaScript
 
 <hr>
 
