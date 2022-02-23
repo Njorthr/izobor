@@ -1,7 +1,7 @@
 # Izobor  
 
 New website for Izobor Pre-Insulated Pipe Manufacturing Co.  
-Built with HTML/CSS/JavaScript  
+Built with HTML/CSS/JavaScript/PHP
 Live Link: https://njorthr.github.io/izobor/
 
 <hr>
