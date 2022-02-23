@@ -732,7 +732,7 @@ footer .col_right ul li a:hover {
     padding: 0 20px 20px 20px;
 }
 .ref_1 {
-    background-image: url(images/tupras.jpg);
+    background-image: url(Referanslar/tupras.JPG);
     background-size: cover;
     background-position: center;
     width: 400px;
@@ -742,7 +742,7 @@ footer .col_right ul li a:hover {
     -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
 }
 .ref_2 {
-    background-image: url(images/enerjisa.jpg);
+    background-image: url(Referanslar/oyka.jpg);
     background-size: cover;
     background-position: center;
     width: 400px;
@@ -772,7 +772,7 @@ footer .col_right ul li a:hover {
     -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
 }
 .ref_5 {
-    background-image: url(images/ukrayna.jpg);
+    background-image: url(Referanslar/ukrayna.JPG);
     background-size: cover;
     background-position: center;
     width: 400px;
@@ -782,9 +782,9 @@ footer .col_right ul li a:hover {
     -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
 }
 .ref_6 {
-    background-image: url(images/roder.jpg);
+    background-image: url(Referanslar/roder.JPG);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     width: 400px;
     height: 250px;
     box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
@@ -792,7 +792,7 @@ footer .col_right ul li a:hover {
     -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
 }
 .ref_7 {
-    background-image: url(images/tutes.jpg);
+    background-image: url(Referanslar/tutes.JPG);
     background-size: cover;
     background-position: center;
     width: 400px;
@@ -803,6 +803,96 @@ footer .col_right ul li a:hover {
 }
 .ref_8 {
     background-image: url(images/botas.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_9 {
+    background-image: url(Referanslar/tuzla.JPG);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_10 {
+    background-image: url(Referanslar/meteoroloji.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_11 {
+    background-image: url(Referanslar/dalaman.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_12 {
+    background-image: url(Referanslar/vegevital.jpg);
+    background-size: cover;
+    background-position: 0 310px;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_13 {
+    background-image: url(Referanslar/bogazliyan\ seker\ fab..bmp);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_14 {
+    background-image: url(Referanslar/ismedir.JPG);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_15 {
+    background-image: url(Referanslar/ermaden.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_16 {
+    background-image: url(Referanslar/erzurum.JPG);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_17 {
+    background-image: url(Referanslar/GLI.jpg);
     background-size: cover;
     background-position: center;
     width: 400px;
