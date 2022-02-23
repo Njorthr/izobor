@@ -191,7 +191,7 @@
     }
     #arrow_toggler:checked ~ .drop_arrow_menu {
         
-        height: 330px;
+        height: 230px;
         opacity: 1;
         transition: 0.4s;
         
