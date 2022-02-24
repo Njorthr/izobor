@@ -166,7 +166,8 @@ input[type="radio"] {
     align-items: flex-start;
 }
 .slide_3 {
-    background-image: url(images//greenhouse_3.jpg);
+    /* background-image: url(images//greenhouse_3.jpg); */
+    background-image: url(images//sera_2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -214,7 +215,8 @@ input[type="radio"] {
     color: gray;
 }
 #label_3 {
-    background-image: url(images/greenhouse_3.jpg);
+    /* background-image: url(images/greenhouse_3.jpg); */
+    background-image: url(images/sera_2.jpeg);
     background-size: cover;
     color: gray;
 }
@@ -966,6 +968,46 @@ footer .col_right ul li a:hover {
     background-image: url(Referanslar/balcova.png);
     background-size: cover;
     background-position: bottom;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_25 {
+    background-image: url(Referanslar/simav.png);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_26 {
+    background-image: url(Referanslar/sandikli.png);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_27{
+    background-image: url(Referanslar/zorlu.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_28 {
+    background-image: url(Referanslar/gazi.png);
+    background-size: cover;
+    background-position: center;
     width: 400px;
     height: 250px;
     box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
