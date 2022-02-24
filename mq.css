@@ -189,13 +189,21 @@
         transform: rotate(180deg);
         transition: transform 0.4s;
     }
-    #arrow_toggler:checked ~ .drop_arrow_menu {
+    #arrow_toggler:checked ~ .drop_arrow_menu_ref {
         
-        height: 270px;
+        height: 270px  !important;
         opacity: 1;
         transition: 0.4s;
         
     }
+    #arrow_toggler:checked ~ .drop_arrow_menu {
+        
+        height: 380px;
+        opacity: 1;
+        transition: 0.4s;
+        
+    }
+    
     #arrow_toggler:checked ~ .drop_arrow_menu li {
         display: block;
     }
