@@ -98,15 +98,16 @@ li.dropnav {
     text-align: left;
    
 }
-.nav-content a:not(:last-child) {
+/* .nav-content a:not(:last-child) {
     border-right: 2px solid gray;
-}
+} */
 .nav-content a:hover {
     background-color: #f1f1f1;
     border-top: none;   
 }
 .dropnav:hover .nav-content {
     display: flex;
+    flex-direction: column;
 }
 /* DROPDOWN END */
 
@@ -293,7 +294,7 @@ section {
     padding: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     flex-wrap: wrap;
 }
 .references li {

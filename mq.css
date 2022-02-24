@@ -125,12 +125,12 @@
         font-size: 1rem;
     }
     
-    .references li:not(:last-child) {
+    .references li {
         flex-basis: 50%;
     }
-    .references li:last-child {
+    /* .references li:last-child {
         flex-basis: 100%;
-    }
+    } */
     .references li   {
        display: flex;
        justify-content: center;
