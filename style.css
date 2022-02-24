@@ -902,6 +902,76 @@ footer .col_right ul li a:hover {
     -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
     -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
 }
+.ref_18 {
+    background-image: url(Referanslar/mosb.png);
+    background-size: cover;
+    background-position: bottom;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_19 {
+    background-image: url(Referanslar/pekdemir.png);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_20 {
+    background-image: url(Referanslar/rixos.png);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_21 {
+    background-image: url(Referanslar/cam_sakura.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_22 {
+    background-image: url(Referanslar/tusas.png);
+    background-size: cover;
+    background-position: bottom;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_23 {
+    background-image: url(Referanslar/maren.png);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
+.ref_24 {
+    background-image: url(Referanslar/balcova.png);
+    background-size: cover;
+    background-position: bottom;
+    width: 400px;
+    height: 250px;
+    box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(0,0,0,0.61);
+}
 /* GALERİ */
 .gallery {
     display: flex;
