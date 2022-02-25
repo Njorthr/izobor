@@ -57,6 +57,11 @@ if ($phmMail->Send()) {
     exit;
 } else {
     // Hatalı
+
+    echo '<pre>';
+    print_r($phmMail);
+    echo '</pre>';
+
     echo 'E-posta gönderilirken bir hata oluştu. Lütfen tekrar deneyiniz.'
     exit;
 } // if ($phmMail->Send()) {
