@@ -50,6 +50,7 @@
     }
     .links ul li a {
         font-size: 1.1rem !important;
+        padding: 5px 5px !important;
     }
     .navbtn {
         padding: 5px 5px !important;

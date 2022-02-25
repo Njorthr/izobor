@@ -8,6 +8,10 @@ body {
 .wrapper {
     overflow-x: hidden;
 }
+.brand_logo a img{
+    width: 100%;
+    height: auto;
+}
 .container {
     width: 90%;
     display: flex;
