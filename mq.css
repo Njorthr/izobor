@@ -20,7 +20,7 @@
        
 }
 @media screen and (max-width: 1560px) {
-    .ref_1, .ref_2, .ref_3, .ref_4, .ref_5, .ref_6, .ref_7, .ref_8 {
+    .ref_images {
         width: 350px;
         height: 225px;
     }
@@ -41,11 +41,22 @@
     #row_3 .col_right {
         margin-top: 20px;
     } */
-    .links ul {
-        display: none;
-    }
-    .menu_wrap {
+    .brand_logo {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 155px;
+        height: auto;
+    }
+    .links ul li a {
+        font-size: 1.1rem !important;
+    }
+    .navbtn {
+        padding: 5px 5px !important;
+    }
+    .ref_images {
+        width: 320px;
+        height: 215px;
     }
 }
 @media screen and (max-width: 1279px) {
@@ -75,6 +86,12 @@
     }
 }
 @media screen and (max-width: 1150px) {
+    .links ul {
+        display: none;
+    }
+    .menu_wrap {
+        display: flex;
+    }
     .ref_col {
         width: 100%;
     }
