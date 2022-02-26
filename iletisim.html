@@ -77,16 +77,16 @@
                         Size tekrar ulaşabilmemiz için lütfen bilgileri doğru giriniz.</h4>
                     <form action="mail.php" method="POST">
                         <div>
-                            <label for="firma">Firmanız</label>
-                            <input type="text" name="firma" id="firma">
+                            <label for="firma">Firmanız *</label>
+                            <input type="text" name="firma" id="firma" required>
                         </div>
                         <div>
                             <label for="name">Adınız Soyadınız *</label>
                             <input type="text" name="name" id="name" required>
                         </div>
                         <div>
-                            <label for="phone">Telefon Numaranız</label>
-                            <input type="tel" id="phone" name="phone" maxlength="17">
+                            <label for="phone">Telefon Numaranız *</label>
+                            <input type="tel" id="phone" name="phone" maxlength="17" required>
                         </div>
                         <div>
                             <label for="email">E-Posta *</label>

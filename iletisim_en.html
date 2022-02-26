@@ -75,18 +75,18 @@
                     <h1>Contact Us</h1>
                     <h4>
                         Please enter the information correctly so that we can contact you again.</h4>
-                    <form action="mail.php" method="POST">
+                    <form action="mail_en.php" method="POST">
                         <div>
-                            <label for="firma">Firm</label>
-                            <input type="text" name="firma" id="firma">
+                            <label for="firma">Firm *</label>
+                            <input type="text" name="firma" id="firma" required>
                         </div>
                         <div>
                             <label for="name">Name Surname *</label>
                             <input type="text" name="name" id="name" required>
                         </div>
                         <div>
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" maxlength="17">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" maxlength="17" required>
                         </div>
                         <div>
                             <label for="email">E-Mail *</label>
