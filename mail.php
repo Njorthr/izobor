@@ -6,6 +6,17 @@ $strCompany = $_POST['firma'];
 $strNumber = $_POST['phone'];
 $strMessage = $_POST['message'];
 
+sleep(2);
+
+if (('' == $strFrom)
+        || ('' == $strFromName)
+        || ('' == $strCompany)
+        || ('' == $strMessage)) {
+    header("Location: tesekkur.html");
+    exit;
+} // if (('' == $strFrom)
+
+
 $strBody = "Firma = "
         . $strCompany
         . "Ad Soyad = "
@@ -48,8 +59,6 @@ $phmMail->WordWrap = 0;                              // set word wrap
 $phmMail->Subject = $strSubject;
 $phmMail->Body = $strBody;
 $phmMail->SmtpClose();
-		
-sleep(2);
 	
 if ($phmMail->Send()) {
     // Başarılı
@@ -57,12 +66,7 @@ if ($phmMail->Send()) {
     exit;
 } else {
     // Hatalı
-
-    echo '<pre>';
-    print_r($phmMail);
-    echo '</pre>';
-
-    echo 'E-posta gönderilirken bir hata oluştu. Lütfen tekrar deneyiniz.'
+    echo 'E-posta gönderilirken bir hata oluştu. Lütfen tekrar deneyiniz.';
     exit;
 } // if ($phmMail->Send()) {
 ?>
